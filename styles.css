@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--navbar-inline-padding: 6rem;
+	--navbar-block-padding: 0#boots-override 0.8rem;
+	--navbar-height: 2#boots-override 0.8rem;
+
+	/* Color Props */
+	--primary-purple: #7d79fc;
+	--secondary-purple: #7440f7;
+	--light-font: #fbedee;
+	--logo-text: #151531;
+	--light-text: #48435a;
+
+	/* Background Colors */
+	--secondary-bg-purple: #f1ecfe;
+
+	/* Table colors */
+	--table-blue: #cdd6ff;
+}
+
+section {
+	overflow-x: hidden !important;
+}
+
+/* Navigation Styling */
+
+/* Hero Content Styling */
+#hero-heading {
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+#boots-override .hero-content-wrapper {
+	margin-top: 10rem;
+}
+
+/* Some Custom Utility. */
+
+/* Font Weight Utilities */
+#boots-override .fw-7{
+	font-weight: 700;
+}
+
+#boots-override .fw-6{
+	font-weight: 600;
+}
+
+#boots-override .fw-5{
+	font-weight: 500;
+}
+
+#boots-override .fw-4{
+	font-weight: 400;
+}
+
+#boots-override .poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+#boots-override .secondary-btn {
+	background-color: var(--secondary-purple);
+}
+
+#boots-override .secondary-outline-btn {
+	border: 1px solid var(--secondary-purple);
+	color: var(--secondary-purple);
+}
+
+#boots-override .secondary-outline-btn:hover {
+	background-color: var(--secondary-purple);
+	color: var(--light-font);
+}
+
+#boots-override .pi-5r {
+	padding-inline: var(--navbar-inline-padding);
+}
+
+#boots-override .w-maxc {
+	width: max-content;
+}
+
+#boots-override .btn-radial {
+	border-radius: 32px;
+	min-width: 8rem;
+}
+
+/* ----------------------------------------- */
+
+#boots-override .hero-wrapper {
+	position: relative;
+	border: 1px solid red;
+	/* For fixing Overlap issues */
+	margin-bottom: 10%;
+
+	background: #fbedee;
+	background: linear-gradient(93deg, rgba(251, 237, 238, 1) 0%, rgba(199, 215, 249, 1) 88%);
+}
+
+/* #boots-override .hero-wrapper::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	background: #fbedee;
+	background: linear-gradient(93deg, rgba(251, 237, 238, 1) 0%, rgba(199, 215, 249, 1) 88%);
+} */
+
+#hero-img-wrapper {
+	position: absolute;
+	width: 50%;
+
+	bottom: 0;
+	transform: translate(50%, 50%);
+}
+
+#hero-img-wrapper > img {
+	display: block;
+	margin-inline: auto;
+	width: 100%;
+}
+
+/* 
+#hero-img-wrapper::before{
+    content: '';
+    position: absolute;
+    background-image: url('./assets/Purple_Circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    transform: translate(-25%,-50%);
+    z-index: -1;
+}
+
+#hero-img-wrapper::after{
+    content: '';
+    position: absolute;
+    background-image: url('./assets/Purple_Circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40%;
+    bottom: 0;
+    right: 0;
+    transform: translate(75%,-75%);
+    z-index: -1;
+} */
+
+/* Tool Section Styling */
+.tools-section-wrapper {
+	background: rgb(252, 229, 190);
+	background: linear-gradient(144deg, rgba(252, 229, 190, 1) 0%, rgba(192, 213, 247, 1) 65%);
+}
+
+#boots-override .tool-icon-wrapper {
+	padding: 0.4rem 0.55rem;
+	width: max-content;
+	border: 1px solid var(--secondary-purple);
+	border-radius: 12px;
+	background-color: var(--secondary-bg-purple);
+	margin-bottom: 0.7rem;
+}
+
+#boots-override .tool-icon-wrapper > i {
+	font-size: 1rem;
+	color: var(--secondary-purple);
+}
+
+/* How it Works Section Styling. */
+#table-id th{
+	background-color: var(--table-blue);
+}
+
+#table-id td{
+	border: 1px solid var(--table-blue);
+}
+
+
+.hiw-content-wrapper li{
+	list-style: none;
+	margin-bottom: 0.5rem;
+}
+
+.hiw-content-wrapper .fa-solid.fa-check{
+	padding: 0.3rem;
+	color: var(--secondary-purple);
+	font-size: 0.8rem;
+	border-radius: 100%;
+	background-color: var(--secondary-bg-purple);
+}
+
+@media screen and (max-width: 991px) {
+	#boots-override .pi-5r {
+		padding-inline: 1rem;
+	}
+}
